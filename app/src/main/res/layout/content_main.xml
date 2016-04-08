@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:paddingBottom="50dp"
+        android:text="Welcome to RangeMate!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/stages_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stages"/>
+    <Button
+        android:id="@+id/hitFactor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hit Factor"
+        android:onClick="startHitFactor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/classifiers_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classifiers"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:id="@+id/fragment_main"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
