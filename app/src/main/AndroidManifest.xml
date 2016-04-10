@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.example.samhuber.rangemate"
           xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.INTERNET"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -20,6 +22,12 @@
         </activity>
         <activity android:name=".HitFactorActivity"
                 android:label="Calculate Hit Factor"/>
+        <activity android:name=".ClassifierActivity"
+                  android:label="Check Classifier Results"/>
+        <activity android:name=".GenericWebViewActivity"
+                  android:label="View Sites">
+
+            </activity>
     </application>
 
 </manifest>
